@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in1"> <button id="btn">按钮</button>
+    <script>
+        var in1 = document.getElementById('in1');
+        btn.onclick = function(){
+            // console.log(in1.value);
+            var y = in1.value
+            if(y>60){
+           alert('打八折');
+            }else if(y<6){
+                alert('免费');
+            }else{
+              alert('原价');
+            }
+        }
+    </script>
+</body>
+</html>
