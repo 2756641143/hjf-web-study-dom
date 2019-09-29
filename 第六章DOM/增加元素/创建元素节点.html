@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <h1 id="h1"></h1>
+      <p id="p"></p>
+      <ul id="ul"></ul>
+      <table id="table"></table>
+    <script>
+   //用一个变量承接在文档中“创建”的一个元素
+    var div = document.createElement('div');
+  //将已经创建的元素放在想放的位置
+  document.body.appendChild(div);
+  //给h1标签放一个a标签
+  var h1 = document.getElementById('h1');
+   var a = document.createElement('a');
+   h1.appendChild(a);
+
+   var p = document.getElementById('p')
+   var span = document.createElement('span');
+     p.appendChild(span);
+
+     var ul = document.getElementById('ul');
+    //  var li = document.createElement('li');
+    //  ul.appendChild(li)
+    for(var i = 0;i<3;i++){
+         var li = document.createElement('li');
+         ul.appendChild(li)
+    }
+
+    var table = document.getElementById('table');
+    for(var tr=0;tr<3;tr++){
+        var tr = document.createElement('tr');
+         table.appendChild(tr)
+    }
+    var table = document.getElementById('table');
+    var td1 = document.createElement('td1');
+     table.appendChild(td1);
+     var td = document.createElement('td');
+     table.appendChild(td)
+    </script>
+</body>
+</html>

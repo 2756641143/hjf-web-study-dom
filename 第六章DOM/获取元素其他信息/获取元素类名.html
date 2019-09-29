@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.a{
+    width:200px;
+    height:200px;
+}
+.b{
+    background-color: red;
+}
+.c{
+    border-radius:20px
+}
+.d{
+    background-color: blue;
+}
+</style>
+<body>
+    <div id="mydiv" class="a b c d">assasasa</div>
+    <script>
+    //    var div = document.getElementById('mydiv');
+    //    console.log(div.className);
+       div.className = 'a c d';
+       console.log(div.className);
+    </script>
+</body>
+</html>
